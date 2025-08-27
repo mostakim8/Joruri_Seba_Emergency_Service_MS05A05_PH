@@ -25,21 +25,44 @@
     <!-- nav-bar start  -->
 
     <!-- nav-bar main div  -->
-     <div class=" bg-[#FFFFFF] px-[60px] py-[15px] flex items-center justify-between">
-       <!-- left-side -->
-        <div class=" flex justify-center items-center mb-4 sm:mb:0">
-            <img src="./assets/logo.png" class=" h-[50px]" alt="loading" srcset="">
-            <h1 class="pl-3 text-[#006747] text-xl font-black">Emergency <br>Service</h1>
+    <!-- Navbar -->
+    <div class="bg-white px-6 py-3 flex items-center justify-between shadow-md">
+    
+      <!-- Left side: Logo + text -->
+      <div class="flex items-center">
+        <img src="./assets/logo.png" class="h-12 w-12 object-contain" alt="logo">
+        <h1 class="pl-3 text-[#006747] text-xl font-black leading-tight">
+          Emergency <br> Service
+        </h1>
+      </div>
+    
+      <!-- Right side: Desktop buttons -->
+      <div class="hidden md:flex items-center gap-3">
+        <button class="btn flex items-center gap-2">100 <img src="./assets/heart.png" class="h-6" alt="heart"></button>
+        <button class="btn flex items-center gap-2">100 <img src="./assets/coin.png" class="h-6" alt="coin"></button>
+        <button class="btn btn-success text-white">Copy</button>
+      </div>
+    
+      <!-- Mobile toggle button -->
+      <div class="md:hidden flex items-center">
+        <div class="relative">
+          <button id="menuToggle" class="btn btn-square btn-outline text-xl">☰</button>
+          <!-- Mobile dropdown (right side) -->
+          <div id="mobileMenu"
+            class="hidden absolute right-0 mt-2 w-40 flex flex-col gap-2 p-3 bg-white border rounded shadow-lg z-50">
+            <button class="btn flex items-center gap-2 justify-center">100 <img src="./assets/heart.png" class="h-6"
+                alt="heart"></button>
+            <button class="btn flex items-center gap-2 justify-center">100 <img src="./assets/coin.png" class="h-6"
+                alt="coin"></button>
+            <button class="btn btn-success text-white justify-center">Copy</button>
+            <button id="closeMenu" class="btn btn-error">Close</button>
+          </div>
         </div>
+      </div>
+    
+    </div>
+    
 
-        <!-- right-side  -->
-         <div>
-            <button class="btn  ">0 <img src="./assets/heart.png" class="h-[25px]" alt="loading"></button>
-            <button class="btn">100 <img src="./assets/coin.png" class="h-[25px]" alt="loading" > </button>
-            <button class="btn btn-success">Copy</button>
-         </div>
-
-     </div>
      <!-- nav-bar end  -->
     
      <!-- banner section start  -->
@@ -369,12 +392,14 @@
 
       <!-- right-side call history -->
 
-        <div class="call-history w-full md:w-[20%] rounded p-4 bg-base-100 shadow-md"> 
-         <h1 class="font-semibold "> <i class="fa-regular fa-clock p-4"></i>Call History</h1>
+        <div class="call-history flex justify-between md:w-[20%] rounded p-2 bg-base-100 shadow-md"> 
+         <h1 class=" "> <i class="fa-regular fa-clock p-4"></i>Call History</h1>
+        <button class="btn btn-error btn-sm mt-2 text-white!">Clear</button>
         </div>
 
        </div>
        
        <!-- card section end  -->
+        <script src="./index.js"></script>
 </body>
 </html>
