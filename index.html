@@ -4,8 +4,377 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emerjency Service</title>
-</head>
-<body>
+
+    <!-- tailwind cdn  -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+        <!-- Daisy UI cdn  -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+        <!-- font awesome cdn  -->
+        <script src="https://kit.fontawesome.com/34deead475.js" crossorigin="anonymous"></script>
+
+        <!-- font cdn  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+      </head>
+<body class="bg-[#F5FFF6]">
+
+    <!-- nav-bar start  -->
+
+    <!-- nav-bar main div  -->
+     <div class=" bg-[#FFFFFF] px-[60px] py-[15px] flex items-center justify-between">
+       <!-- left-side -->
+        <div class=" flex justify-center items-center mb-4 sm:mb:0">
+            <img src="./assets/logo.png" class=" h-[50px]" alt="loading" srcset="">
+            <h1 class="pl-3 text-[#006747] text-xl font-black">Emergency <br>Service</h1>
+        </div>
+
+        <!-- right-side  -->
+         <div>
+            <button class="btn  ">0 <img src="./assets/heart.png" class="h-[25px]" alt="loading"></button>
+            <button class="btn">100 <img src="./assets/coin.png" class="h-[25px]" alt="loading" > </button>
+            <button class="btn btn-success">Copy</button>
+         </div>
+
+     </div>
+     <!-- nav-bar end  -->
     
+     <!-- banner section start  -->
+      <div class="bg-gradient-to-r from-green-900  via-green-700   to-green-900   w-full flex flex-col items-center justify-center text-white text-center py-10 px-4 sm:py-12 md:py-16px lg:py-20 ">
+        <img src="./assets/logo-dark.png" class=" mb-3 h-[60px] sm:h-[70px] md:h-[80px]lg:-h[92px]" alt="Loading">
+        <h1 class="mb-5 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold font-Hind"> Emergency Service Directory</h1>
+        <p class="mb-5 text-sm sm:text-base  lg-whitespace-nowrap">Government Emergency Services ar Your Fingertip- A Project by Government of the People's Republic of Bangladesh </p>
+      </div>
+      <!-- banner section end  -->
+
+      <!-- card section start -->
+       <div class="flex flex-col md:flex-row gap-6 mx-[60px] my-[30px] justify-between">
+        <!-- left-side  -->
+        <div class=" w-full md:w-[80%lg:w-4/5 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
+         <!-- national-emergency  -->
+          <div class="card rounded w-full bg-base-100 shadow-xl p-4">
+            <!-- Top Section with Icons -->
+            <div class="flex items-center justify-between">
+              <div class=" rounded-full p-2 bg-red-100">
+              <img src="./assets/emergency.png" alt="Emergency" class=" h-[32px] ">
+              </div>
+              
+              <button class="btn btn-ghost text-2xl"><i class="fa-regular fa-heart"></i> </button>
+            </div>
+        
+            <!-- Text Section -->
+            <div class="mt-3">
+              <h1 class="font-bold text-lg">National Emergency Number</h1>
+              <p class="text-sm text-gray-500">National Emergency</p>
+              <p class="font-bold text-xl mt-4">999</p>
+              <button class="btn rounded-full text-sm "><span class="text-gray-500">All</span></button>
+            </div>
+        
+            <!-- Buttons Section -->
+            <div class="flex gap-2 mt-4">
+              <!-- Hidden input for copy -->
+              <input type="text" id="number" value="999" readonly class="hidden" />
+        
+              <!-- Styled copy button -->
+              <label for="number" class="btn btn-outline btn-sm w-1/2 text-center cursor-pointer"><i class="fa-regular fa-copy"></i>
+                Copy
+              </label>
+        
+              <!-- Call Button -->
+              <a href="tel:999" class="btn  bg-success !text-white btn-sm w-1/2"><i class="fa-solid fa-phone"></i>Call</a>
+            </div>
+          </div>
+         <!-- police helpline -->
+          <div class="card rounded w-full bg-base-100 shadow-xl p-4">
+            <!-- Top Section with Icons -->
+            <div class="flex items-center justify-between">
+              <div class=" rounded-full p-2 bg-blue-100">
+                <img src="./assets/police.png" alt="Police" class=" h-[32px] ">
+              </div>
+          
+              <button class="btn btn-ghost text-2xl"><i class="fa-regular fa-heart"></i> </button>
+            </div>
+          
+            <!-- Text Section -->
+            <div class="mt-3">
+              <h1 class="font-bold text-lg">Police Helpline Number</h1>
+              <p class="text-sm text-gray-500">Police Helpline Number</p>
+              <p class="font-bold text-xl mt-4">999</p>
+              <button class="btn rounded-full text-sm "><span class="text-gray-500">Police</span></button>
+            </div>
+          
+            <!-- Buttons Section -->
+            <div class="flex gap-2 mt-4">
+              <!-- Hidden input for copy -->
+              <input type="text" id="number" value="999" readonly class="hidden" />
+          
+              <!-- Styled copy button -->
+              <label for="number" class="btn btn-outline btn-sm w-1/2 text-center cursor-pointer"><i
+                  class="fa-regular fa-copy"></i>
+                Copy
+              </label>
+          
+              <!-- Call Button -->
+              <a href="tel:999" class="btn  bg-success !text-white btn-sm w-1/2"><i class="fa-solid fa-phone"></i>Call</a>
+            </div>
+          </div>
+        <!-- fire service  -->
+          <div class="card rounded w-full bg-base-100 shadow-xl p-4">
+            <!-- Top Section with Icons -->
+            <div class="flex items-center justify-between">
+              <div class=" rounded-full p-2 bg-red-100">
+                <img src="./assets/fire-service.png" alt="Fire Service" class=" h-[32px] ">
+              </div>
+          
+              <button class="btn btn-ghost text-2xl"><i class="fa-regular fa-heart"></i> </button>
+            </div>
+          
+            <!-- Text Section -->
+            <div class="mt-3">
+              <h1 class="font-bold text-lg">Fire Service Number</h1>
+              <p class="text-sm text-gray-500">Fire Service</p>
+              <p class="font-bold text-xl mt-4">999</p>
+              <button class="btn rounded-full text-sm "><span class="text-gray-500">Fire</span></button>
+            </div>
+          
+            <!-- Buttons Section -->
+            <div class="flex gap-2 mt-4">
+              <!-- Hidden input for copy -->
+              <input type="text" id="number" value="999" readonly class="hidden" />
+          
+              <!-- Styled copy button -->
+              <label for="number" class="btn btn-outline btn-sm w-1/2 text-center cursor-pointer"><i
+                  class="fa-regular fa-copy"></i>
+                Copy
+              </label>
+          
+              <!-- Call Button -->
+              <a href="tel:999" class="btn  bg-success !text-white btn-sm w-1/2"><i class="fa-solid fa-phone"></i>Call</a>
+            </div>
+          </div>
+         <!-- ambulance service  -->
+          <div class="card rounded w-full bg-base-100 shadow-xl p-4">
+            <!-- Top Section with Icons -->
+            <div class="flex items-center justify-between">
+              <div class=" rounded-full p-2 bg-red-100">
+                <img src="./assets/ambulance.png" alt="ambulance" class=" h-[32px] ">
+              </div>
+          
+              <button class="btn btn-ghost text-2xl"><i class="fa-regular fa-heart"></i> </button>
+            </div>
+          
+            <!-- Text Section -->
+            <div class="mt-3">
+              <h1 class="font-bold text-lg">Ambulance Service</h1>
+              <p class="text-sm text-gray-500">Ambulance</p>
+              <p class="font-bold text-xl mt-4">1994-999999</p>
+              <button class="btn  rounded-full text-xs"><span class="text-gray-500">Health</span></button>
+            </div>
+          
+            <!-- Buttons Section -->
+            <div class="flex gap-2 mt-4">
+              <!-- Hidden input for copy -->
+              <input type="text" id="number" value="999" readonly class="hidden" />
+          
+              <!-- Styled copy button -->
+              <label for="number" class="btn btn-outline btn-sm w-1/2 text-center cursor-pointer"><i
+                  class="fa-regular fa-copy"></i>
+                Copy
+              </label>
+          
+              <!-- Call Button -->
+              <a href="tel:999" class="btn  bg-success !text-white btn-sm w-1/2"><i class="fa-solid fa-phone"></i>Call</a>
+            </div>
+          </div>
+        <!-- women and child helpline -->
+        <div class="card rounded w-full bg-base-100 shadow-xl p-4">
+          <!-- Top Section with Icons -->
+          <div class="flex items-center justify-between">
+            <div class=" rounded-full p-2 bg-red-100">
+              <img src="./assets/emergency.png" alt="Emergency" class=" h-[32px] ">
+            </div>
+        
+            <button class="btn btn-ghost text-2xl"><i class="fa-regular fa-heart"></i> </button>
+          </div>
+        
+          <!-- Text Section -->
+          <div class="mt-3">
+            <h1 class="font-bold text-lg">Woman & Child Helpline</h1>
+            <p class="text-sm text-gray-500">Woman & Child Helpline</p>
+            <p class="font-bold text-xl mt-4">109</p>
+            <button class="btn rounded-full text-sm "><span class="text-gray-500">Help</span></button>
+          </div>
+        
+          <!-- Buttons Section -->
+          <div class="flex gap-2 mt-4">
+            <!-- Hidden input for copy -->
+            <input type="text" id="number" value="999" readonly class="hidden" />
+        
+            <!-- Styled copy button -->
+            <label for="number" class="btn btn-outline btn-sm w-1/2 text-center cursor-pointer"><i
+                class="fa-regular fa-copy"></i>
+              Copy
+            </label>
+        
+            <!-- Call Button -->
+            <a href="tel:999" class="btn  bg-success !text-white btn-sm w-1/2"><i class="fa-solid fa-phone"></i>Call</a>
+          </div>
+        </div>
+
+        <!-- anti-corrruption helpline -->
+        <div class="card rounded w-full bg-base-100 shadow-xl p-4">
+  <!-- Top Section with Icons -->
+  <div class="flex items-center justify-between">
+    <div class=" rounded-full p-2 bg-red-100">
+      <img src="./assets/emergency.png" alt="Emergency" class=" h-[32px] ">
+    </div>
+
+    <button class="btn btn-ghost text-2xl"><i class="fa-regular fa-heart"></i> </button>
+  </div>
+
+  <!-- Text Section -->
+  <div class="mt-3">
+    <h1 class="font-bold text-lg">Anti-corrruption Helpline</h1>
+    <p class="text-sm text-gray-500">Anti-corrruption</p>
+    <p class="font-bold text-xl mt-4">106</p>
+    <button class="btn rounded-full text-sm "><span class="text-gray-500">Govt.</span></button>
+  </div>
+
+  <!-- Buttons Section -->
+  <div class="flex gap-2 mt-4">
+    <!-- Hidden input for copy -->
+    <input type="text" id="number" value="999" readonly class="hidden" />
+
+    <!-- Styled copy button -->
+    <label for="number" class="btn btn-outline btn-sm w-1/2 text-center cursor-pointer"><i
+        class="fa-regular fa-copy"></i>
+      Copy
+    </label>
+
+    <!-- Call Button -->
+    <a href="tel:999" class="btn  bg-success !text-white btn-sm w-1/2"><i class="fa-solid fa-phone"></i>Call</a>
+  </div>
+        </div>
+
+        <!-- electricity helpline -->
+        <div class="card rounded w-full bg-base-100 shadow-xl p-4">
+  <!-- Top Section with Icons -->
+  <div class="flex items-center justify-between">
+    <div class=" rounded-full p-2 bg-red-100">
+      <img src="./assets/emergency.png" alt="Emergency" class=" h-[32px] ">
+    </div>
+
+    <button class="btn btn-ghost text-2xl"><i class="fa-regular fa-heart"></i> </button>
+  </div>
+
+  <!-- Text Section -->
+  <div class="mt-3">
+    <h1 class="font-bold text-lg">Electricity helpline</h1>
+    <p class="text-sm text-gray-500">Electricity Outage</p>
+    <p class="font-bold text-xl mt-4">16216</p>
+    <button class="btn rounded-full text-sm "><span class="text-gray-500">Electricity</span></button>
+  </div>
+
+  <!-- Buttons Section -->
+  <div class="flex gap-2 mt-4">
+    <!-- Hidden input for copy -->
+    <input type="text" id="number" value="999" readonly class="hidden" />
+
+    <!-- Styled copy button -->
+    <label for="number" class="btn btn-outline btn-sm w-1/2 text-center cursor-pointer"><i
+        class="fa-regular fa-copy"></i>
+      Copy
+    </label>
+
+    <!-- Call Button -->
+    <a href="tel:999" class="btn  bg-success !text-white btn-sm w-1/2"><i class="fa-solid fa-phone"></i>Call</a>
+  </div>
+        </div>
+
+        <!-- brac help line  -->
+        <div class="card rounded w-full bg-base-100 shadow-xl p-4">
+  <!-- Top Section with Icons -->
+  <div class="flex items-center justify-between">
+    <div class=" rounded-full p-2 bg-red-100">
+      <img src="./assets/brac.png" alt="Brac" class=" h-[32px] ">
+    </div>
+
+    <button class="btn btn-ghost text-2xl"><i class="fa-regular fa-heart"></i> </button>
+  </div>
+
+  <!-- Text Section -->
+  <div class="mt-3">
+    <h1 class="font-bold text-lg">Brac Helpline</h1>
+    <p class="text-sm text-gray-500">Brac</p>
+    <p class="font-bold text-xl mt-4">16445</p>
+    <button class="btn rounded-full text-sm "><span class="text-gray-500">NGO</span></button>
+  </div>
+
+  <!-- Buttons Section -->
+  <div class="flex gap-2 mt-4">
+    <!-- Hidden input for copy -->
+    <input type="text" id="number" value="999" readonly class="hidden" />
+
+    <!-- Styled copy button -->
+    <label for="number" class="btn btn-outline btn-sm w-1/2 text-center cursor-pointer"><i
+        class="fa-regular fa-copy"></i>
+      Copy
+    </label>
+
+    <!-- Call Button -->
+    <a href="tel:999" class="btn  bg-success !text-white btn-sm w-1/2"><i class="fa-solid fa-phone"></i>Call</a>
+  </div>
+        </div>
+
+        <!-- bangladesh railway helpline  -->
+        <div class="card rounded w-full bg-base-100 shadow-xl p-4">
+  <!-- Top Section with Icons -->
+        <div class="flex items-center justify-between">
+        <div class=" rounded-full p-2 bg-red-100">
+        <img src="./assets/Bangladesh-Railway.png" alt="Railway" class=" h-[32px] ">
+       </div>
+
+         <button class="btn btn-ghost text-2xl"><i class="fa-regular fa-heart"></i> </button>
+        </div>
+
+  <!-- Text Section -->
+  <div class="mt-3">
+    <h1 class="font-bold text-lg">Bangladesh Railway Helpline</h1>
+    <p class="text-sm text-gray-500">Bangladesh Railway</p>
+    <p class="font-bold text-xl mt-4">163</p>
+    <button class="btn rounded-full text-sm "><span class="text-gray-500">Travel</span></button>
+  </div>
+
+  <!-- Buttons Section -->
+  <div class="flex gap-2 mt-4">
+    <!-- Hidden input for copy -->
+    <input type="text" id="number" value="999" readonly class="hidden" />
+
+    <!-- Styled copy button -->
+    <label for="number" class="btn btn-outline btn-sm w-1/2 text-center cursor-pointer"><i
+        class="fa-regular fa-copy"></i>
+      Copy
+    </label>
+
+    <!-- Call Button -->
+    <a href="tel:999" class="btn  bg-success !text-white btn-sm w-1/2"><i class="fa-solid fa-phone"></i>Call</a>
+  </div>
+        </div>
+
+        </div>
+
+
+      <!-- right-side call history -->
+
+        <div class="call-history w-full md:w-[20%] rounded p-4 bg-base-100 shadow-md"> 
+         <h1 class="font-semibold "> <i class="fa-regular fa-clock p-4"></i>Call History</h1>
+        </div>
+
+       </div>
+       
+       <!-- card section end  -->
 </body>
 </html>
