@@ -97,11 +97,11 @@ function updateCoinCount() {
        historyItem.innerHTML = `
       
        <div>
-      <p class="font-bold ">${serviceName}</p>
+      <p class="font-bold text-sm text-start">${serviceName}</p>
       <p class="text-sm text-gray-500">${serviceNumber}</p>
       </div>
 
-      <p class="text-xs  pl-14 ">${formattedDate}, ${formattedTime}</p>
+      <p class="text-xs text-end ">${formattedDate} ${formattedTime}</p>
     `;
        historyItem.classList.add("mb-2");
        historyList.appendChild(historyItem);
